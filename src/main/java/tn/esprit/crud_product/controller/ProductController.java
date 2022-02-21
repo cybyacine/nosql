@@ -41,7 +41,7 @@ public class ProductController {
 	@GetMapping("/products")
 	public List<Product> getProducts() {
 
-		return productRepository.findAll();
+		return (List<Product>)productRepository.findAll();
 	}
 
 	@PutMapping("products/{id}")

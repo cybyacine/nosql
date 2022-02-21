@@ -1,11 +1,8 @@
 package tn.esprit.crud_product.repository;
 
-import org.springframework.data.cassandra.repository.CassandraRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 
 import tn.esprit.crud_product.model.Product;
 
-
-@Repository
-public interface ProductRepository extends CassandraRepository<Product,Integer> {
+public interface ProductRepository extends CrudRepository<Product,Integer> {
 }
